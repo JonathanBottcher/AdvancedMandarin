@@ -1,33 +1,65 @@
-import pandas as pd
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
 
-def det_level(sentence : str)-> float:
-	word_index = []
-	path = 'E:\Jonathan\Desktop\Mandarin Sentences\hsk_list\words.tsv'
-	words = pd.read_csv(path, sep='\t', encoding='utf-16')
+import json
+import jieba
+
+#from typing import List
+'''
+def separate_words(sentence: str) -> List[str]:
 	
-	for i  in sentence:
-		for j in words['Character']:
+	
+	segmentation = jieba.cut(sentence, cut_all=True)
+	#print(' '.join(segmentation))
+	seg_list = [i for i in segmentation]
+	
+
+	return seg_list
+
+#print(separate_words('我觉得你是一个很好的学生'))
+#print(separate_words('你好'))
+'''
+
+def det_level(sentence : str) -> float:
+	
+	path = './hsklevels.json'
+	levels_list = [] #holds the level of each word
+			
+			
+	#Word Segmentation		
+	segmentation = jieba.cut(sentence, cut_all=True)
+	#print(' '.join(segmentation))
+	seg_list = [i for i in segmentation]
+	#print(seg_list)
+			
+			
+	
+	
+	#Level determining
+	with open(path, 'r', encoding='utf-8') as levels_file:
+		levels = json.load(levels_file)
+		
+	for i in seg_list:
+		for j in levels.keys():
 			if i == j:
-				word_index.append(words.Character[words.Character == j].index.tolist())
-				
-	indexes = []
-	for k in word_index:
-		indexes.append(k[0])
-		
+				levels_list.append(levels[j])
+					
 	
-	levels = []
-	for x in indexes:
-		levels.append(words.iat[x, 2])
-		
+	average_level = 0
 	
-	#caculate average sentence level
-	l_sum = 0
-	for y in levels:
-		l_sum += y
-		
-	if len(levels) != 0:
-		average_level = l_sum/len(levels)
-	else:
-		average_level = 6
+	for l in levels_list:
+		average_level += l
+
 	
-	return average_level
+	if len(levels_list) == 0:
+		return 0
+	
+	return(round(average_level / len(levels_list)))
+
+#if __name__ == '__main__':
+#	det_level()
+
+#test
+#print(det_level('我觉得你是一个很好的学生'))
+#print(det_level('你好'))
+
