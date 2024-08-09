@@ -1,0 +1,37 @@
+.selection-container{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: max-content;
+    border: 1px solid skyblue;
+    border-radius: 20px;
+   
+   
+    
+}
+
+.level-selection{
+    display: flex;
+    text-align: left;
+    text-decoration: none;
+    width: 20rem;
+    height: 4rem;
+    background-color: rgb(255, 255, 255);
+    border-top: 1px solid skyblue;
+    align-items: center;
+    padding-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+   
+
+}
+.level-selection:last-child{
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.level-selection:first-child{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}

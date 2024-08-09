@@ -1,0 +1,7 @@
+node_modules/
+public/
+.parcel-cache/
+*.log
+.hintrc
+dist
+converter.ts

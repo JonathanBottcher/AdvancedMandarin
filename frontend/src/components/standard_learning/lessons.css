@@ -1,0 +1,47 @@
+.lesson-container{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: max-content;
+    border: 1px solid skyblue;
+    border-radius: 20px;
+    right: -500px;
+   
+   
+    
+}
+
+.lesson-selection{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    text-decoration: none;
+    width: 20rem;
+    height: 4rem;
+    background-color: rgb(255, 255, 255);
+    border-top: 1px solid skyblue;
+    padding-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    padding-top: 10px;
+    
+   
+
+}
+.lesson-selection:last-child{
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.lesson-selection:first-child{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.lesson-desc{
+font-size: 0.8em;
+}
+.lesson-selection:hover{
+    background-color: rgb(192, 192, 192);
+}

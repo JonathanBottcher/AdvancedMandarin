@@ -1,0 +1,35 @@
+.start-button{
+font-weight: 600;
+outline: none;
+font-size: 1.2em;
+position: relative;
+border-radius: 18px;
+background: linear-gradient(to right, #b7142f, #cf1111);
+color: white;
+cursor: pointer;
+padding: 1rem;
+box-shadow: 0 5px 0 #720a1c;
+text-shadow: 0 1px 1px #cf1111;
+border: none;
+transition: top 0.3s;
+transition: box-shadow 0.0s;
+top:5px;
+font-family: Inter, sans-serif;
+}
+.start-button:active{
+    text-shadow: 0 1px 1px #cf1111;
+    box-shadow: 0 1px 0 #720a1c;
+    top: 8px;
+   
+}
+
+.row{
+    display: flex;
+    margin-top: 45vh;
+    padding-left: 10rem;
+    gap: 18rem;
+}
+.column{
+  flex: 50%;  
+
+}
