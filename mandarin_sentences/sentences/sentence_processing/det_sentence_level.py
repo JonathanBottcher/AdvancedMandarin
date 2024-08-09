@@ -22,7 +22,7 @@ def separate_words(sentence: str) -> List[str]:
 
 def det_level(sentence : str) -> float:
 	
-	path = './hsklevels.json'
+	path = '/home/jonathan/Projects/AdvancedChinese/backend/mandarin_sentences/sentences/sentence_processing/hsklevels.json'
 	levels_list = [] #holds the level of each word
 			
 			

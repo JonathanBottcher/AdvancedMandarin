@@ -87,16 +87,16 @@ DATABASES = {
     'default': {
         'ENGINE':  'django.db.backends.postgresql_psycopg2',
         'NAME': 'postgres',
-        'USER': 'postgres',
-        'PASSWORD': '19031645aB*',
+        'USER': 'dev',
+        'PASSWORD': 'postgres',
         'HOST': 'localhost',
         'PORT': '5432'
     }
     ,'sentences': {
         'ENGINE':  'django.db.backends.postgresql_psycopg2',
         'NAME': 'sentences',
-        'USER': 'postgres',
-        'PASSWORD': '19031645aB*',
+        'USER': 'dev',
+        'PASSWORD': 'postgres',
         'HOST': 'localhost',
         'PORT': '5432'
     }
