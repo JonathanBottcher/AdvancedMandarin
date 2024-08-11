@@ -8,7 +8,7 @@ import Home from './components/home_page/Home';
 import Welcome from './components/welcome_page/Welcome';
 import Standard_sentences from './components/standard_learning/Standard_sentences';
 import RandomLearning from './components/RandomLearning';
-
+import SelectLevel from './components/level_select/SelectLevel';
 import {
     BrowserRouter as Router,
     Routes,
@@ -16,6 +16,7 @@ import {
     Link,
     BrowserRouter,
 } from "react-router-dom";
+
 
 const App = () => {
     return (
@@ -34,6 +35,7 @@ const App = () => {
                 <Route path='standard' element={ <Standard />} />
                 <Route path='standard_sentences' element={ <Standard_sentences />} />
                 <Route path='random-learning' element={ <RandomLearning />} />
+                <Route path='select-level' element={ <SelectLevel />} />
                
                 
             </Route>
