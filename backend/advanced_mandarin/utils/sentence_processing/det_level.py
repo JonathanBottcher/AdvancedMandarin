@@ -12,7 +12,7 @@ def det_level(sentence: str) -> int:
     json_path = os.path.join(project_root, 'data', 'levels.json')
 
     seg_sentence = segmentation.segment(sentence)
-
+    
     with open(json_path, 'r', encoding='utf-8') as levels_file:
         levels = json.load(levels_file)
 
