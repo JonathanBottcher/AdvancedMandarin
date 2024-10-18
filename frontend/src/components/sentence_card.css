@@ -16,15 +16,18 @@
     grid-row-start: 2;
     width: 100%;   
 }
+
 .switch-sentence{
-    
     grid-row-start: 2;
     cursor: pointer;
     border-radius: 1rem;
-    background-color: #dee2ec;;
+    background-color: var(--text-color);
     color: var(--main-bg-color);
     font-weight: 700;
-    width:fit-content ;
+    width:fit-content;
+    border: none;
+    align-self: center;
+    justify-self: center;
 
     
    
@@ -33,13 +36,13 @@
 }
 .switch-sentence.prev{
 grid-column-start: 1;
-justify-self: center;
+
     
 
 }
 .switch-sentence.next{
     grid-column-start: 3;
-    justify-self: center;
+    
 }
 table{
     text-align: center;
@@ -106,4 +109,16 @@ td{
         grid-row-start: 1;
         justify-self: center;
         align-self: self-end;
+    }
+
+    .card-td.line{
+
+        border-top: 1px solid rgb(202, 202, 202);
+        
+    }
+
+    /*bugfix* : the third-party script mandarinspot adds extra margin to the chinese characters*/
+    ruby{
+        margin: 0 !important;
+        padding: 0 !important;
     }

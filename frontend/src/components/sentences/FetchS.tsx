@@ -6,7 +6,7 @@ import SentenceCard from '../SentenceCard';
 import { TiArrowRightThick, TiArrowLeftThick } from "react-icons/ti";
 
 //test
-import Navbar from '../sidebar/Sidebar';
+import Navbar from '../Navbar/Sidebar';
 
  function FetchS(){
     //let trad = '繁体';

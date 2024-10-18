@@ -1,21 +1,21 @@
 import './lessons.css';
 import React from 'react';
+type LessonItem = {lessonTitle : string, lessonDesc : string,lessonNumber : string, lessonLink : string, row? : number, column? : number};
+interface LessonProps {lessons : LessonItem[]};
 
-
-
-function Lessons({lessonObj = {}} = {}){
+function Lessons({lessons} : LessonProps){
 
     return(
     
         <div className="lesson-container">
             
             {
-                Object.keys(lessonObj).map((item, i)=>(
-                <a className='lesson-selection' href={lessonObj[item]?.lessonLink}>
+                lessons.map((item, i)=>(
+                <a className='lesson-selection' href={item.lessonLink}>
                     
-                    {item}
-                    <p className='lesson-desc'>{lessonObj[item]?.lessonDesc}</p>
-                </a>)) 
+                    {item.lessonTitle}
+                    <p className='lesson-desc'>{item.lessonDesc}</p>
+                </a>))
             }
       
     </div>
@@ -26,7 +26,7 @@ function Lessons({lessonObj = {}} = {}){
 
 
 
-    )
+    );
 
 
 

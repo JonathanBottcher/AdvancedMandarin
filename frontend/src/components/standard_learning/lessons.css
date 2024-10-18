@@ -1,12 +1,11 @@
 .lesson-container{
-    position: absolute;
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: max-content;
     border: 1px solid skyblue;
     border-radius: 20px;
-    right: -500px;
+   
    
    
     

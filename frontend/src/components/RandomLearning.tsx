@@ -1,22 +1,29 @@
-import React from "react";
+import React, {createElement, useEffect} from "react";
 import SentenceCard from "./SentenceCard";
-import Sidebar from "./sidebar/Sidebar";
+import Navbar from "./Navbar/Navbar";
 
 
-function RandomLearning(){
+
+
+//level-1
+//level-2
+//level-3
+//level-4
+//etc
+function RandomLearning({level}){
+
 
 
 
     return(
 
-        <>
-            <Sidebar />
-            <SentenceCard fetch={'level-4'}/>
-        
-        
-        
-        
-        
+        <> 
+            
+            
+            <Navbar />
+            <SentenceCard fetch={level}/>
+             
+           
         </>
         
 
