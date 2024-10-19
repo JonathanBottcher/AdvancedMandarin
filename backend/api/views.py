@@ -17,4 +17,4 @@ def get_sentences(request, level):
         items = list(Sentence.objects.all().filter(level = level))
         sentences = random.sample(items, 10)
         serializer = SentenceSerializer(sentences, many=True)
-        return Response(serializer.data)
+    return Response(serializer.data)
