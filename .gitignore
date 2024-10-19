@@ -5,3 +5,4 @@ tatoeba.sqlite
 /backend/advanced_mandarin/db.sqlite3
 /backend/advanced_mandarin/advanced_madarin/settings.py
 /frontend/
+/backend/advanced_mandarin/.vscode
