@@ -3,7 +3,7 @@ from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from api.serializers import SentenceSerializer
 from sentences.models import Sentence
-from api.query_set import query_set
+
 import sys
 import random
 
