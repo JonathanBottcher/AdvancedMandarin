@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 import json
-import segmentation
+from . import segmentation
 import os
 
 def det_level(sentence: str) -> int:
