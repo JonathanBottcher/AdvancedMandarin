@@ -11,5 +11,5 @@ def home(request):
     template = loader.get_template("index.html")
     if(request.GET.get('press_button')):
         download_sentences()
-        print('button works')
+        
     return HttpResponse(template.render())
