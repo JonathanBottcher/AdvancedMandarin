@@ -2,7 +2,8 @@ tatoeba.sqlite
 /backend_old/
 /.parcel-cache/
 /backend/.venv/
-/backend/advanced_mandarin/db.sqlite3
-/backend/advanced_mandarin/advanced_madarin/settings.py
+/backend/db.sqlite3
+/backend/advanced_madarin/settings.py
 /frontend/
-/backend/advanced_mandarin/.vscode
+/backend/.vscode
+__pycache__/
