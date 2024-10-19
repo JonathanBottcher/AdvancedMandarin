@@ -1,4 +1,4 @@
-tatoeba.sqlite
+.tatoeba.sqlite
 /backend_old/
 /.parcel-cache/
 /backend/.venv/
